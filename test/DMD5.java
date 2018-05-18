@@ -1,20 +1,20 @@
 /**
- * Copyright (C), 2015-2018, XXXæœ‰é™å…¬å¸
+ * Copyright (C), 2015-2018, XXXÓĞÏŞ¹«Ë¾
  * FileName: DMD5
  * Author:   Pactera
  * Date:     2018/5/14 21:24
  * Description:
  * History:
  * <author>          <time>          <version>          <desc>
- * ä½œè€…å§“å           ä¿®æ”¹æ—¶é—´           ç‰ˆæœ¬å·              æè¿°
+ * ×÷ÕßĞÕÃû           ĞŞ¸ÄÊ±¼ä           °æ±¾ºÅ              ÃèÊö
  */
 package test;
 
 import java.security.MessageDigest;
 
 /**
- * ã€ˆä¸€å¥è¯åŠŸèƒ½ç®€è¿°ã€‰<br> 
- * ã€ˆã€‰
+ * ¡´Ò»¾ä»°¹¦ÄÜ¼òÊö¡µ<br> 
+ * ¡´¡µ
  *
  * @author Pactera
  * @create 2018/5/14

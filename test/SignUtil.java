@@ -1,20 +1,20 @@
 /**
- * Copyright (C), 2015-2018, XXXæœ‰é™å…¬å¸
+ * Copyright (C), 2015-2018, XXXÓĞÏŞ¹«Ë¾
  * FileName: SignUtil
  * Author:   Pactera
  * Date:     2018/5/14 21:25
  * Description:
  * History:
  * <author>          <time>          <version>          <desc>
- * ä½œè€…å§“å           ä¿®æ”¹æ—¶é—´           ç‰ˆæœ¬å·              æè¿°
+ * ×÷ÕßĞÕÃû           ĞŞ¸ÄÊ±¼ä           °æ±¾ºÅ              ÃèÊö
  */
 package test;
 
 import java.util.*;
 
 /**
- * ã€ˆä¸€å¥è¯åŠŸèƒ½ç®€è¿°ã€‰<br> 
- * ã€ˆã€‰
+ * ¡´Ò»¾ä»°¹¦ÄÜ¼òÊö¡µ<br> 
+ * ¡´¡µ
  *
  * @author Pactera
  * @create 2018/5/14
@@ -25,24 +25,24 @@ public class SignUtil {
     public static String encryptSign(Map<String, String> map,String APP_SECRET) {
         String signStr = "";
         try {
-            //ç­¾åæ•°æ®
+            //Ç©ÃûÊı¾İ
             signStr += APP_SECRET;
             if (map == null) {
                 return null;
             }
 
-            //æ‰€æœ‰å‚æ•°æŒ‰ç…§å­—æ¯æƒ³é¡ºåºæ’åº
+            //ËùÓĞ²ÎÊı°´ÕÕ×ÖÄ¸ÏëË³ĞòÅÅĞò
             Set<String> keySet = sortMapKey(map);
 
-            //å¾ªç¯ç”Ÿæˆç­¾åæ•°æ®å€¼
+            //Ñ­»·Éú³ÉÇ©ÃûÊı¾İÖµ
             for (String key : keySet) {
                 signStr += key + map.get(key);
             }
             signStr += APP_SECRET;
 
-            //ç­¾åç”¨md5ç¼–ç 
+            //Ç©ÃûÓÃmd5±àÂë
             signStr = DMD5.md5Encode(signStr);
-            //è½¬æ¢ä¸ºå¤§å†™
+            //×ª»»Îª´óĞ´
             signStr = signStr.toUpperCase();
         } catch (Exception e) {
 
@@ -50,7 +50,7 @@ public class SignUtil {
         return signStr;
     }
 
-    //æ‰€æœ‰å‚æ•°æŒ‰ç…§å­—æ¯æƒ³é¡ºåºæ’åº
+    //ËùÓĞ²ÎÊı°´ÕÕ×ÖÄ¸ÏëË³ĞòÅÅĞò
     private static Set sortMapKey(Map map) {
         Set keySet = map.keySet();
         List list = new ArrayList(map.keySet());
